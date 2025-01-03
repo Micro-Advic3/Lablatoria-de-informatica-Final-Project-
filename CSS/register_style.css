@@ -1,0 +1,119 @@
+body {
+    font-family: "primary-font", "segoe ui", "tahoma";
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    direction: ltr;
+}
+
+#register-main-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#popup-form {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#popup-form.active {
+    width: 450px;
+    height: 500px;
+}
+
+#register-form {
+    width: 90%;
+    visibility: hidden;
+}
+
+#register-form.active {
+    visibility: visible;
+}
+
+.btn-popup {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    bottom: -25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-popup.active {
+    bottom: -75px;
+}
+
+.btn-popup.active::before {
+    content: "+";
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.btn-popup::before {
+    content: "×";
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.form-control {
+    width: 94%;
+    height: 40px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #a1a1a1;
+    margin: 5px 0 20px;
+    padding: 0px 20px;
+    font-size: 18px;
+}
+
+#register-form h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+ul.summery-validation {
+    margin-top: 0;
+}
+
+ul.summery-validation li {
+    font-size: 12px;
+    color: red;
+}
+
+/*# sourceMappingURL=register_style.css.map */
